@@ -10,20 +10,28 @@
 
 <body>
     <header id="site-header">
-        <h1>Simone Pierantozzi</h1>
-        <!-- Header -->
-        <p><strong>Studente Full Stack</strong> - corso Epicode 2026</p>
-        <!-- Menu navigazione -->
-        <nav>
-            <ul>
-                <li><a href="#chi-sono">Chi sono</a></li>
-                <li><a href="#competenze">Competenze</a></li>
-                <li><a href="#esperienze">Esperienze</a></li>
-                <li><a href="#progetti">Progetti</a></li>
-                <li><a href="#suDiMe">Su di me</a></li>
-                <li><a href="#contatti">Contatti</a></li>
-            </ul>
-        </nav>
+        <div class="block-header">
+            <h1>Simone Pierantozzi</h1>
+            <!-- Header -->
+            <p><strong>Studente Full Stack &lt;/&gt;</strong> in formazione su Epicode 2026</p>
+            <!-- Menu navigazione -->
+            <nav>
+                <ul>
+                    <li><span class="icon"><ion-icon name="person-outline"></ion-icon></span><a href="#chi-sono">Chi
+                            sono</a></li>
+                    <li><span class="icon"><ion-icon name="settings-outline"></ion-icon></span><a
+                            href="#competenze">Competenze</a></li>
+                    <li><span class="icon"><ion-icon name="layers-outline"></ion-icon></span><a
+                            href="#esperienze">Esperienze</a></li>
+                    <li><span class="icon"><ion-icon name="library-outline"></ion-icon></span><a
+                            href="#progetti">Progetti</a></li>
+                    <li><span class="icon"><ion-icon name="move-outline"></ion-icon></span><a href="#suDiMe">Su di
+                            me</a></li>
+                    <li><span class="icon"><ion-icon name="mail-outline"></span></ion-icon><a
+                            href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
@@ -45,35 +53,105 @@
 
         <!--Competenze-->
         <section id="competenze">
-            <h2>Competenze da apprendere</h2>
-            <p>In queste settimane vorrei apprendere queste conoscenze:</p>
-            <ul>
-                <li>HTML - struttura della pagina</li>
-                <li>CSS - stile e impaginazione</li>
-                <li>Git e GitHub - versionamento del codice</li>
-                <li>Visual Studio Code - editor di lavoro</li>
-            </ul>
+            <h2>Competenze</h2>
+            <p>Le tecnologie su cui mi sento più sicuro al termine della prima settimana di corso. Le percentuali sono
+                autovalutazioni, non certificazioni.</p>
+            <table class="t-comp">
+                <caption><i>Stack tecnico - autovalutazione</i></caption>
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>Tecnologia</h3>
+                        </th>
+                        <th>
+                            <h3>Livello</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>HTML5 semantico</h4>
+                            <p><i>Tag strutturali, attributi, accessibilità di base, form con validazione</i></p>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="skill-bar html"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>CSS3</h4>
+                            <p><i>Selettori, psuedo-classi, box-model, float, psuedo-elementi, Google Fonts</i></p>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="skill-bar css3"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Git e GitHun</h4>
+                            <p><i>init, add, commit, push, repository remoti, pubblicazione su GitHub Pages</i></p>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="skill-bar git"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Linea di comando</h4>
+                            <p><i>Navigazione tra cartelle, gestione file, comandi base di shell su macOS e
+                                    Linux</i></p>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="skill-bar linea"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Markdoen e documentazione</h4>
+                            <p><i>Reasme, documentazione tecnica, scrittura chiara per altri sviluppatori</i></p>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="skill-bar markdoen"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- Esperienze -->
         <section id="esperienze">
             <h2>Esperienze</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo libero consequuntur nisi quisquam,
-                deserunt reiciendis pariatur voluptas aspernatur inventore ipsa optio tempore illum blanditiis, soluta,
-                temporibus hic. Inventore, quasi.</p>
-            <table>
-                <caption>Le mie esperienze</caption>
+            <p>Un riepilogo del mio corso formativo e lavorativo recente</p>
+            <table class="t-exp">
+                <caption><i>Esperienze formative e lavorative</i></caption>
                 <thead>
                     <tr>
-                        <th>Anno</th>
-                        <th>Corso</th>
-                        <th>Votazione</th>
+                        <th>
+                            <h3>Anno</h3>
+                        </th>
+                        <th>
+                            <h3>Corso / Scuola</h3>
+                        </th>
+                        <th>
+                            <h3>Votazione</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>2012</td>
-                        <td>Ass.Poltrona</td>
+                        <td>Assistente alla Poltrona</td>
                         <td>78/100</td>
                     </tr>
                     <tr>
@@ -91,6 +169,11 @@
                     <td>
                         <input type="checkbox" checked onclick="return false">
                         </th>
+                        <tr>
+                            <td>2026</td>
+                            <td>Epicode</td>
+                            <td>In corso</td>
+                        </tr>
                 </tbody>
             </table>
         </section>
@@ -98,46 +181,57 @@
         <!-- Progetti -->
         <section id="progetti">
             <h2>Progetti</h2>
-            <p>Di seguito riporterò i mei progetti svolti tramite sil sito <b>GitHub</b></p>
+            <p>I lavori fatti durante le prime settimane di corso. Ogni card ha un link repository.</p>
             <div class="paginaRicetta">
                 <h3>Pagina ricetta</h3>
                 <p>Questa è il mio esercizio di inizio corso. Può essere visionato qui:</p>
+                <a href="javascript:void()"><ion-icon name="logo-github" class="logo"></ion-icon><b>Vedi su
+                        GitHub</b></a>
             </div>
-            <a href="javascript:void()">GitHub</a>
+            <div class="presentazione">
+                <h3>Card di presentazione</h3>
+                <p>Un biglietto digitale con nome, ruolo, link ai social. Pratica su tag semantinci, link e immagini.
+                </p>
+                <a href="javascript:void()"><ion-icon name="logo-github" class="logo"></ion-icon><b>Vedi su
+                        GitHub</b></a>
+            </div>
+            <div class="portfolio">
+                <h3>Portfolio personale</h3>
+                <p>Questa pagina. Costruita da zero in cinque giorni, dal markup HTML alla stilizzazione CSS, fino alla
+                    pubblicazione su GitHub Pages.</p>
+                <a href="javascript:void()"><ion-icon name="logo-github" class="logo"></ion-icon><b>Vedi su
+                        GitHub</b></a>
+            </div>
+            <div>
+                <a href="progetti.html">Vai ai miei progetti</a>
+            </div>
         </section>
-
-        <!-- Card di presentazione -->
-        <section>
-            <h3>Card di presentazione</h3>
-            <p>Esercizio di sintesi sulla struttura HTML</p>
-            <a href="javascript:void()">GitHub</a>
-        </section>
-
         <!-- Form Contatto -->
         <section class="contattami">
             <h2>Contattami</h2>
-            <p>Ti risponderò il prima possibile</p>
+            <p>Compila il form per scrivermi. Rispodo entro 24 ore</p>
             <form method="get" action="grazie.html">
-                <label for="name">Nome&Cognome</label><br>
-                <input type="text" name="name" id="name" placeholder="Scrivi il tuo nome" required><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Scrivi la tua email" required><br><br>
-                <label for="frequency">Motivo di contatto</label><br>
-                <select name="frequency" id="frequency" required><br>
-                    <option value="" selected></option>
-                    <option value="OF">Off.Lavoro</option>
-                    <option value="INF">Informazioni</option>
-                    <option value="ALTRO">Altro</option>
-                </select><br><br>
-                <label for="date">Data di ricontatto</label><br>
-                <input type="date" name="date" id="date"><br><br>
-                <label for="textarea" id="textarea">Messaggio</label><br>
-                <textarea name="message" id="message" rows="4" cols="20">Scrivi un breve messaggio</textarea><br><br>
+                <div class="form">
+                    <label for="name">Nome&Cognome</label><br>
+                    <input type="text" name="name" id="name" placeholder="Scrivi il tuo nome" required><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Scrivi la tua email" required><br><br>
+                    <label for="frequency">Motivo di contatto</label><br>
+                    <select name="frequency" id="frequency" required><br>
+                        <option value="" selected>Proposte di lavoro</option>
+                        <option value="OF">Off.Lavoro</option>
+                        <option value="INF">Informazioni</option>
+                        <option value="ALTRO">Altro</option>
+                    </select><br><br>
+                    <label for="date">Data di ricontatto</label><br>
+                    <input type="date" name="date" id="date"><br><br>
+                    <label for="textarea" id="textarea">Messaggio</label><br>
+                    <textarea name="message" id="message" rows="8"
+                        cols="20">Scrivi un breve messaggio</textarea><br><br>
+                </div>
                 <input type="checkbox" name="checkbox" id="checkbox">
                 <label for="checkbox" id="checkbox">Accetto di essere ricontatto all'indirizzo indicato</label><br><br>
                 <button type="submit" id="sendForm">Invia</button>
-
-
             </form>
         </section>
     </main>
@@ -148,19 +242,19 @@
             <p>Ti racconto qualcosa sul mio conto:</p>
         </div>
         <div class="articleSuDiMe">
-            <article>
+            <article class="anime">
                 <h3>Anime</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
                     blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
                     incidunt veritatis! Voluptas?</p>
             </article>
-            <article>
+            <article class="musica">
                 <h3>Musica</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
                     blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
                     incidunt veritatis! Voluptas?</p>
             </article>
-            <article>
+            <article class="motori">
                 <h3>Motori</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
                     blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
@@ -175,7 +269,12 @@
         <!-- Contatti -->
         <div id="contatti">
             <h2 id="contatti">Contatti</h2>
-            <p>Se desideri guardare i miei progetti e contattarmi, puoi farlo qui</p>
+            <div class="iconFoot">
+                    <a href="http://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https:www.linkedin.it" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https:www.gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+                    <a href="https:www.google.it" target="_blank"><ion-icon name="globe-outline"></ion-icon></a>
+                </div>
             <p><i>Profilo GitHub: </i><a href="https://github.com/sic9522" target="_blank">GitHub</a></p>
             <p><i>Profilo Instagram: </i><a href="https://www.instagram.com/simonepierantozzi/" target="_blank">Simone
                     Pierantozzi</a></p>
@@ -183,6 +282,8 @@
             &copy;2026 Simone Pierantozzi
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

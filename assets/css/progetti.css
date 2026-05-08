@@ -1,0 +1,131 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0px;
+    display: block;
+    background-color: hsl(25, 61%, 94%);
+}
+
+main {
+    max-width: 920px;
+    margin: 0px auto;
+    background-color: hsl(25, 61%, 94%);
+    border-radius: 16px;
+    margin-top: -32px;
+}
+
+section {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    margin: 0px;
+    font-size: 4rem !important;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: rgb(1, 1, 204);
+}
+
+main section {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 1);
+}
+
+main section h2::before {
+    display: inline-block;
+    content: " ⭐ ";
+    color: gold;
+    margin-right: 10px;
+    vertical-align: top;
+    font-size: 25px;
+}
+
+.block-header {
+    margin-top: 100px;
+}
+
+.block-header p {
+    padding-bottom: 35px;
+}
+
+#site-header {
+    background-image: url("https://static8.depositphotos.com/1370441/858/i/600/depositphotos_8582958-stock-photo-amazing-landscape-beautiful-mountain-sunset.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid gold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+    height: 30vh;
+}
+
+
+#site-header nav ul li {
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 7px;
+    
+}
+
+#site-header nav ul li:hover {
+    color: rgb(1, 1, 204);
+    border-radius: 4px 4px 0 0;
+    background-color: gold;
+    border: 1px solid gold;
+
+}
+
+#site-header nav ul li:hover .icon,
+#site-header nav ul li:hover a {
+    color: blue; 
+}
+
+
+
+#site-header nav ul {
+    margin-left: -50px;
+    list-style: none;
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#site-header p {
+    color: hsl(25, 61%, 94%);
+    margin: 0px;
+}
+
+#site-header ul {
+    margin: 0px;
+}
+
+#site-header a {
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    padding: 4px 8px;
+    margin: 0;
+}
+.icon {
+    font-size: 1.3rem;
+    margin: 0px;
+    color: white;
+    vertical-align: auto;
+    display: inline-block;
+}
+
