@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.7;
     margin: 0px;
     display: block;
@@ -127,5 +129,36 @@ nav ul li a:visited {
     color: white;
     vertical-align: auto;
     display: inline-block;
+    text-align: center;
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgb(0, 0, 78);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.iconFoot a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.iconFoot a:hover {
+    background-color: gold;
+    color: rgb(1, 1, 204);
+}
+
+footer p {
+    color: wheat;
 }
 
