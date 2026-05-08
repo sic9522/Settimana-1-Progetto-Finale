@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Simone Pierantozzi</title>
+</head>
+
+<body>
+    <header id="site-header">
+        <h1>Simone Pierantozzi</h1>
+        <!-- Header -->
+        <p><strong>Studente Full Stack</strong> - corso Epicode 2026</p>
+        <!-- Menu navigazione -->
+        <nav>
+            <ul>
+                <li><a href="#chi-sono">Chi sono</a></li>
+                <li><a href="#competenze">Competenze</a></li>
+                <li><a href="#esperienze">Esperienze</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#suDiMe">Su di me</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Chi sono -->
+        <section id="chi-sono">
+            <h2>Chi sono</h2>
+            <figure>
+                <img src="https://placehold.co/200x200" alt="Foto Profilo" class="avatar">
+            </figure>
+            <p>Mi chiamo Simone Pierantozzi e sto imparando a programmare. Ho iniziato da poco il corso per
+                diventareFull-Stack Developer tramite <strong>Epicode</strong>Sono nato a Roma, città dove vivo ancora.
+                Ho 30 anni.Vorrei intraprendere questa carriera poichè, quando ero piccolo, ne ero molto appassionato
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus adipisci consequatur ducimus
+                aliquam. Fugiat eaque tempora ab placeat. Porro vitae deserunt officia, quas ducimus laborum numquam
+                reiciendis delectus magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos ipsam
+                necessitatibus id quis error ipsum quasi expedita, dolores rerum tenetur ab velit culpa sit impedit
+                voluptatibus repellat. Eveniet, illum. </p>
+        </section>
+
+        <!--Competenze-->
+        <section id="competenze">
+            <h2>Competenze da apprendere</h2>
+            <p>In queste settimane vorrei apprendere queste conoscenze:</p>
+            <ul>
+                <li>HTML - struttura della pagina</li>
+                <li>CSS - stile e impaginazione</li>
+                <li>Git e GitHub - versionamento del codice</li>
+                <li>Visual Studio Code - editor di lavoro</li>
+            </ul>
+        </section>
+
+        <!-- Esperienze -->
+        <section id="esperienze">
+            <h2>Esperienze</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo libero consequuntur nisi quisquam,
+                deserunt reiciendis pariatur voluptas aspernatur inventore ipsa optio tempore illum blanditiis, soluta,
+                temporibus hic. Inventore, quasi.</p>
+            <table>
+                <caption>Le mie esperienze</caption>
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>Corso</th>
+                        <th>Votazione</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2012</td>
+                        <td>Ass.Poltrona</td>
+                        <td>78/100</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Odontotecnico</td>
+                        <td>87/100</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Pasticceria</td>
+                        <td>94/100</td>
+                    </tr>
+                    <td>2021</td>
+                    <td>Php</td>
+                    <td>
+                        <input type="checkbox" checked onclick="return false">
+                        </th>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Progetti -->
+        <section id="progetti">
+            <h2>Progetti</h2>
+            <p>Di seguito riporterò i mei progetti svolti tramite sil sito <b>GitHub</b></p>
+            <div class="paginaRicetta">
+                <h3>Pagina ricetta</h3>
+                <p>Questa è il mio esercizio di inizio corso. Può essere visionato qui:</p>
+            </div>
+            <a href="javascript:void()">GitHub</a>
+        </section>
+
+        <!-- Card di presentazione -->
+        <section>
+            <h3>Card di presentazione</h3>
+            <p>Esercizio di sintesi sulla struttura HTML</p>
+            <a href="javascript:void()">GitHub</a>
+        </section>
+
+        <!-- Form Contatto -->
+        <section class="contattami">
+            <h2>Contattami</h2>
+            <p>Ti risponderò il prima possibile</p>
+            <form method="get" action="grazie.html">
+                <label for="name">Nome&Cognome</label><br>
+                <input type="text" name="name" id="name" placeholder="Scrivi il tuo nome" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Scrivi la tua email" required><br><br>
+                <label for="frequency">Motivo di contatto</label><br>
+                <select name="frequency" id="frequency" required><br>
+                    <option value="" selected></option>
+                    <option value="OF">Off.Lavoro</option>
+                    <option value="INF">Informazioni</option>
+                    <option value="ALTRO">Altro</option>
+                </select><br><br>
+                <label for="date">Data di ricontatto</label><br>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="textarea" id="textarea">Messaggio</label><br>
+                <textarea name="message" id="message" rows="4" cols="20">Scrivi un breve messaggio</textarea><br><br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" id="checkbox">Accetto di essere ricontatto all'indirizzo indicato</label><br><br>
+                <button type="submit" id="sendForm">Invia</button>
+
+
+            </form>
+        </section>
+    </main>
+    <!-- Su di me -->
+    <aside id="suDiMe">
+        <div class="testo-sudime">
+            <h2>Su di me</h2>
+            <p>Ti racconto qualcosa sul mio conto:</p>
+        </div>
+        <div class="articleSuDiMe">
+            <article>
+                <h3>Anime</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
+                    blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
+                    incidunt veritatis! Voluptas?</p>
+            </article>
+            <article>
+                <h3>Musica</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
+                    blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
+                    incidunt veritatis! Voluptas?</p>
+            </article>
+            <article>
+                <h3>Motori</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, maiores. Iste, doloribus consectetur
+                    blanditiis laboriosam dolorem ratione fugit eum maxime unde, velit at autem, laudantium sit! Eum,
+                    incidunt veritatis! Voluptas?</p>
+            </article>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Contatti -->
+        <div id="contatti">
+            <h2 id="contatti">Contatti</h2>
+            <p>Se desideri guardare i miei progetti e contattarmi, puoi farlo qui</p>
+            <p><i>Profilo GitHub: </i><a href="https://github.com/sic9522" target="_blank">GitHub</a></p>
+            <p><i>Profilo Instagram: </i><a href="https://www.instagram.com/simonepierantozzi/" target="_blank">Simone
+                    Pierantozzi</a></p>
+            <p><i>Profilo discord: </i><a href="https://discord.gg/R9VMU7Ut" target="_blank">Discord</a></p>
+            &copy;2026 Simone Pierantozzi
+        </div>
+    </footer>
+</body>
+
+</html>
