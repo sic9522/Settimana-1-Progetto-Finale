@@ -9,21 +9,17 @@ body {
 }
 
 main {
-    max-width: 920px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin: 0px auto;
     background-color: hsl(25, 61%, 94%);
     border-radius: 16px;
-    margin-top: -32px;
-}
-
-section {
-    background-color: white;
 }
 
 h1 {
     color: white;
     margin: 0px;
-    font-size: 4rem !important;
+    font-size: 4rem;
 }
 
 h2 {
@@ -32,6 +28,9 @@ h2 {
 }
 
 main section {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
     padding: 32px;
     margin-bottom: 24px;
     border: 1px solid #e0e0e0;
@@ -48,12 +47,12 @@ main section h2::before {
     font-size: 25px;
 }
 
-.block-header {
-    margin-top: 100px;
+nav {
+    text-align: start;
 }
 
-.block-header p {
-    padding-bottom: 35px;
+.block-header {
+    height: auto;
 }
 
 #site-header {
@@ -61,42 +60,11 @@ main section h2::before {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 60px 20px 40px;
     border-bottom: 4px solid gold;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 2);
-    height: 30vh;
+    height: auto;
 }
 
-
-#site-header nav ul li {
-    display: inline-block;
-    margin: 0 4px;
-    border-radius: 4px 4px 0 0;
-    border: 1px solid white;
-    text-decoration: none;
-    padding: 7px;
-    
-}
-
-#site-header nav ul li:hover {
-    color: rgb(1, 1, 204);
-    border-radius: 4px 4px 0 0;
-    background-color: gold;
-    border: 1px solid gold;
-
-}
-
-#site-header nav ul li:hover .icon,
-#site-header nav ul li:hover a {
-    color: blue; 
-}
-
-
-
-#site-header nav ul {
-    margin-left: -50px;
-    list-style: none;
-}
 
 #site-header h1 {
     font-size: 3rem;
@@ -117,9 +85,13 @@ main section h2::before {
     text-decoration: none;
 }
 
+nav ul li a {
+    color: white;
+
+}
+
 nav ul li a:link,
 nav ul li a:visited {
-    color: white;
     padding: 4px 8px;
     margin: 0;
 }
@@ -127,9 +99,9 @@ nav ul li a:visited {
 .icon {
     font-size: 1.3rem;
     margin: 0px;
-    color: white;
     vertical-align: auto;
-    display: inline-block;
+    text-align: left;
+    color: white;
 }
 
 #chi-sono p:first-of-type::first-letter {
@@ -189,7 +161,7 @@ nav ul li a:visited {
     width: 65%;
 }
 
-.linea{
+.linea {
     width: 80%;
 }
 
@@ -208,27 +180,30 @@ nav ul li a:visited {
     color: rgb(1, 1, 204);
     padding-top: 5px;
     margin: 5px;
-    
+
 }
+
 .t-comp h4 {
     margin: 0;
     padding-left: 10px;
-    
+
 }
- .t-comp p {
+
+.t-comp p {
     margin: 0;
     margin-right: 10px;
     color: #676666;
     margin-left: 10px;
- }
+}
 
 #competenze .t-comp th:first-child {
     width: 45%;
 }
+
 /* tabella esperienze */
 table {
     width: 100%;
-    text-align:left;
+    text-align: left;
     border-collapse: collapse;
 }
 
@@ -261,15 +236,16 @@ caption {
 .t-exp tr {
     border-bottom: 0.5px solid rgb(223, 212, 212);
 }
+
 /* Progetti */
- #progetti a {
+#progetti a {
     text-decoration: none;
     font-size: 20px;
- }
+}
 
 #progetti a:hover {
     border-bottom: 2px solid gold;
- }
+}
 
 
 .paginaRicetta {
@@ -353,12 +329,6 @@ button {
     color: white;
 }
 
-button:hover {
-    color: gold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
-}
-
 .avatar {
     width: 110px;
     height: 110px;
@@ -367,12 +337,14 @@ button:hover {
     float: left;
     margin: 0 24px 12px 0;
 }
+
 /*aside*/
 aside {
+    margin: auto;
     background-color: white;
-    max-width: 855px;   
     padding: 32px;
-    margin: 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 24px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -390,15 +362,6 @@ aside {
     margin-bottom: 15px;
 }
 
-#suDiMe .testo-sudime h2::before {
-    display: inline-block;
-    content: " ⭐ ";
-    color: gold;
-    margin-right: 10px;
-    vertical-align: top;
-    font-size: 25px;
-}
-
 .musica {
     background-color: white;
     border-radius: 8px;
@@ -410,7 +373,7 @@ aside {
     margin-bottom: 15px;
 }
 
-.motori{
+.motori {
     background-color: hsl(55, 96%, 96%);
     border-radius: 8px;
     border-right: 1px solid #dadada;
@@ -420,25 +383,24 @@ aside {
     padding: 20px;
     margin-bottom: 15px;
 }
-.form input, select {
+
+.form input,
+select {
     width: 100%;
     height: 40px;
     background-color: hsl(55, 96%, 96%);
-    
+    font-size: 16px;
+
 }
 
 .form textarea {
     width: 100%;
     background-color: hsl(55, 96%, 96%);
 }
+
 /*contatti*/
 #contatti {
     color: wheat;
-}
-
-#contatti p a:link,
-#contatti p a:visited {
-    color: rgb(202, 250, 250);
 }
 
 footer {
@@ -453,33 +415,116 @@ textarea::placeholder {
     color: #999999;
 }
 
-.iconFoot a {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    color: white;
-    font-size: 1.3rem;
-    margin: 0 auto;
-    line-height: 50px;
-}
-
-.iconFoot a:hover {
-    background-color: gold;
-    color: rgb(1, 1, 204);
-}
-
 .newPage {
     text-align: right;
 }
 
-.newPage a:link,
-.newPage a:visited {
+#contatti p {
+    margin: 0;
+}
+
+#progetti a {
     color: rgb(1, 1, 204);
 }
 
-#contatti p {
-    margin: 0;
+footer a:link,
+footer a:visited {
+    color: rgb(1, 1, 204);
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    #site-header p {
+        margin-bottom: 25px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        padding: 5px;
+    }
+
+    nav ul li {
+        border: 1px solid white;
+        border-bottom: none;
+        padding: 5px;
+        margin-left: 5px;
+        margin-bottom: -5px;
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    #site-header p {
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        padding: 5px;
+    }
+
+    nav ul li {
+        border: 1px solid white;
+        border-bottom: none;
+        padding: 5px;
+        margin-left: 5px;
+        margin-bottom: -5px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    main section h2::before {
+        display: inline-block;
+        content: " ⭐ ";
+        color: gold;
+        margin-right: 10px;
+        vertical-align: top;
+        font-size: 25px;
+    }
+
+    #site-header nav ul li:hover .icon,
+    #site-header nav ul li:hover a {
+        color: blue;
+    }
+
+    #site-header nav ul li:hover {
+        color: rgb(1, 1, 204);
+        background-color: gold;
+
+    }
+
+    button:hover {
+        color: gold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    }
+
+    section {
+        display: block;
+        width: 80%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+    }
+
+    aside {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .articleSuDiMe {
+        display: flex;
+        gap: 10px;
+    }
 }
